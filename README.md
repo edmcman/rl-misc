@@ -22,3 +22,6 @@ A lot of compilation could be fixed by adding a Ghidra header file.
 
 The script currently uses randomly generated test cases, but could use testcases
 from symbolic execution instead.
+
+STOKE in this configuration will only work on leaf functions (i.e., no function
+calls allowed, except maybe to compiler built-ins).
