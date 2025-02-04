@@ -19,3 +19,6 @@ I noticed some tests that got a cost of 40000 but the code is identical.  I am
 not sure what's going on there.  Maybe something wrong with STOKE's sandbox?
 
 A lot of compilation could be fixed by adding a Ghidra header file.
+
+The script currently uses randomly generated test cases, but could use testcases
+from symbolic execution instead.
