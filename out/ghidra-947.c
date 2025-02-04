@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1){char cVar1;char *local_20;int local_10;local_20 = (char *)(param_1 + 9);local_10 = 0x47;while (((cVar1 = *local_20, cVar1 != '\0' && (cVar1 != '/')) && (local_10 != 0))) {if ((cVar1 == 'D') || (cVar1 == 'd')) {*local_20 = 'E';}else if ((((cVar1 < '0') || ('9' < cVar1)) &&(((cVar1 != '+' && (cVar1 != '-')) && (cVar1 != 'e')))) &&((cVar1 != 'E' && (cVar1 != '.')))) {*local_20 = ' ';}local_20 = local_20 + 1;local_10 = local_10 + -1;}return;}

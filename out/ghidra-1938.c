@@ -1,0 +1,4 @@
+#include <stdlib.h>
+
+# 1 
+char * func0(void *param_1,int param_2,uint *param_3){int iVar1;void *pvVar2;void *pvVar3;char *pcVar4;pvVar2 = (void *)((long)param_1 + (long)param_2);pvVar3 = memchr(pvVar2,0x40,(ulong)*param_3);if (pvVar3 == (void *)0x0) {pcVar4 = "0-body";}else {iVar1 = (int)pvVar2;if (pvVar2 < pvVar3) {*param_3 = (int)pvVar3 - iVar1;pcVar4 = "0-body";}else if ((((int)*param_3 < 2) || (*(char *)((long)pvVar2 + 1) != '/')) ||(*(char *)((long)pvVar2 + 2) != '/')) {pvVar2 = memchr((void *)((long)pvVar2 + 1),0x40,(ulong)(*param_3 - 1));if (pvVar2 == (void *)0x0) {pcVar4 = "2-Error-non-closing";}else {*param_3 = ((int)pvVar2 + 1) - iVar1;pcVar4 = "3-parameter";}}else {pvVar3 = memchr(pvVar2,10,(ulong)*param_3);if (pvVar3 != (void *)0x0) {if ((pvVar2 == param_1) || (*(char *)((long)pvVar2 + -1) == '\n')) {*param_3 = ((int)pvVar3 - iVar1) + 1;}else {*param_3 = (int)pvVar3 - iVar1;}}pcVar4 = "1-comment";}}return pcVar4;}

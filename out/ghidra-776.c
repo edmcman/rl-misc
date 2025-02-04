@@ -1,0 +1,3 @@
+
+# 1 
+void func0(int param_1,long param_2,long param_3,double *param_4){double dVar1;double dVar2;double dVar3;double dVar4;int local_44;int local_40;int local_3c;double local_38;double local_30;local_30 = 0.0;local_38 = 0.0;local_3c = 0;local_40 = 1;for (local_44 = 0; local_44 < param_1; local_44 = local_44 + 1) {dVar1 = *(double *)(param_2 + (long)local_3c * 8);dVar2 = *(double *)(param_2 + (long)local_40 * 8);dVar3 = *(double *)(param_3 + (long)local_3c * 8);dVar4 = *(double *)(param_3 + (long)local_40 * 8);local_30 = (dVar1 * dVar3 - dVar2 * dVar4) + local_30;local_38 = dVar2 * dVar3 + dVar1 * dVar4 + local_38;local_3c = local_3c + 2;local_40 = local_40 + 2;}*param_4 = local_30;param_4[1] = local_38;return;}

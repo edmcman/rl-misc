@@ -1,0 +1,3 @@
+
+# 1 
+short * func0(char *param_1,short *param_2,int param_3){int local_2c;short *local_28;char *local_20;if (((param_1 == (char *)0x0) || (param_2 == (short *)0x0)) ||(local_2c = param_3, local_28 = param_2, local_20 = param_1, param_3 == 0)) {param_2 = (short *)0x0;}else {while ((local_2c != 0 && (*local_20 != '\0'))) {*local_28 = (short)*local_20;local_2c = local_2c + -1;local_28 = local_28 + 1;local_20 = local_20 + 1;}if (local_2c + -1 != 0) {*local_28 = 0;}}return param_2;}

@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1,int *param_2,long param_3,int *param_4,double *param_5){undefined4 local_14;undefined4 local_10;undefined4 local_c;*param_5 = 0.0;for (local_14 = 0; local_14 < *param_4; local_14 = local_14 + 1) {local_c = 0;for (local_10 = 0; local_10 < *param_2; local_10 = local_10 + 1) {if (*(double *)(param_3 + (long)local_14 * 8) <= *(double *)(param_1 + (long)local_10 * 8)) {if (*(double *)(param_3 + (long)local_14 * 8) < *(double *)(param_1 + (long)local_10 * 8)) {local_c = local_c + 1;}}else {local_c = local_c + -1;}}*param_5 = (double)local_c / (double)*param_4 + *param_5;}*param_5 = *param_5 / (double)*param_2;return;}

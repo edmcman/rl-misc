@@ -1,0 +1,3 @@
+
+# 1 
+void func0(undefined *param_1){uint local_10;uint local_c;for (local_10 = 0; (param_1[local_10] != '\0' && (param_1[local_10] == '0'));local_10 = local_10 + 1) {}if (param_1[local_10] == '\0') {*param_1 = 0x30;param_1[1] = 0;}else {for (local_c = local_10; param_1[local_c] != '\0'; local_c = local_c + 1) {param_1[local_c - local_10] = param_1[local_c];}param_1[local_c - local_10] = 0;}return;}

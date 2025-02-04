@@ -1,0 +1,4 @@
+#include <stdarg.h>
+
+# 1 
+void func0(long param_1,char *param_2){long in_FS_OFFSET;char *local_38;long local_30;int local_20;char local_1c [12];long local_10;local_10 = *(long *)(in_FS_OFFSET + 0x28);local_1c[0] = '\0';local_30 = param_1;for (local_20 = 1; local_20 < 0xc; local_20 = local_20 + 1) {local_1c[local_20] = ((byte)local_30 & 7) + 0x30;local_30 = local_30 >> 3;}local_1c[0xb] = local_1c[0xb] & 0x33;for (local_20 = 0xb; local_1c[local_20] == '0'; local_20 = local_20 + -1) {}local_38 = param_2;if (local_20 == 0) {local_38 = param_2;local_20 = 1;}while (-1 < local_20) {*local_38 = local_1c[local_20];local_38 = local_38 + 1;local_20 = local_20 + -1;}if (local_10 != *(long *)(in_FS_OFFSET + 0x28)) {/* WARNING: Subroutine does not return */__stack_chk_fail();}return;}

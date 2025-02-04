@@ -1,0 +1,4 @@
+#include <stdio.h>
+
+# 1 
+void func0(long param_1,long param_2){int iVar1;undefined4 local_10;undefined4 local_c;local_c = 0;local_10 = 0;while ((*(char *)(param_2 + local_10) != '\0' && (local_c < 0x62))) {if (*(char *)(param_2 + local_10) == '\t') {iVar1 = local_c + 1;*(undefined *)(param_1 + local_c) = 0x5c;local_c = local_c + 2;*(undefined *)(param_1 + iVar1) = 0x74;}else if (*(char *)(param_2 + local_10) == '\n') {*(undefined *)(param_1 + local_c) = 0x5c;*(undefined *)(param_1 + (local_c + 1)) = 0x6e;local_c = local_c + 2;}else {*(undefined *)(local_c + param_1) = *(undefined *)(local_10 + param_2);local_c = local_c + 1;}local_10 = local_10 + 1;}*(undefined *)(param_1 + local_c) = 0;return;}

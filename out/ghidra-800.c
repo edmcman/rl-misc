@@ -1,0 +1,3 @@
+
+# 1 
+uint func0(long param_1,uint param_2){undefined4 local_24;undefined4 local_14;local_14 = 0;local_24 = param_2;if (param_2 == 0xffffffff) {local_24 = (uint)(*(byte *)(param_1 + 0xe) >> 6);}if (local_24 == 0) {local_14 = (((uint)(*(byte *)(param_1 + 6) >> 6) |((uint)*(byte *)(param_1 + 7) | (*(byte *)(param_1 + 8) & 3) << 8) * 4) + 1) *(1 << (*(byte *)(param_1 + 4) >> 7 | *(char *)(param_1 + 5) * '\x02' & 6U) + 2) *(1 << (*(byte *)(param_1 + 9) & 0xf)) >> 9;}else if (local_24 == 1) {local_14 = (((uint)*(byte *)(param_1 + 5) |((uint)*(byte *)(param_1 + 6) | (*(byte *)(param_1 + 7) & 0x3f) << 8) << 8) + 1) *0x400;}return local_14;}

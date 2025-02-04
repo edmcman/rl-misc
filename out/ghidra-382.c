@@ -1,0 +1,6 @@
+#include <string.h>
+
+#include <math.h>
+
+# 1 
+undefined8 func0(ulong param_1,int param_2,int param_3,uint param_4,int param_5,int param_6,int param_7,int param_8,ulong param_9,int param_10,int param_11,uint param_12,int param_13,int param_14,int param_15,int param_16,undefined4 *param_17,undefined4 *param_18){undefined8 uVar1;if ((((((((param_1 & 3) == 0) && ((param_4 & 3) == 0)) && ((param_9 & 3) == 0)) &&(((param_12 & 3) == 0 && (0 < param_2)))) &&(((0 < param_3 && ((0 < param_10 && (0 < param_11)))) && (-1 < param_5)))) &&((((-1 < param_6 && (0 < param_7)) && (0 < param_8)) &&(((-1 < param_13 && (-1 < param_14)) &&((0 < param_15 && ((0 < param_16 && (param_7 + param_5 <= param_2)))))))))) &&((param_8 + param_6 <= param_3 &&((param_15 + param_13 <= param_10 && (param_16 + param_14 <= param_11)))))) {if (param_7 == param_15) {*param_17 = 1;}else {if (param_7 != param_15 * 2) goto LAB_00100161;*param_17 = 2;}if (param_8 == param_16) {*param_18 = 1;}else {if (param_8 != param_16 * 2) goto LAB_00100161;*param_18 = 2;}uVar1 = 1;}else {LAB_00100161:uVar1 = 0;}return uVar1;}

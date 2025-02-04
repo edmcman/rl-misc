@@ -1,0 +1,151 @@
+#include <stdint.h>
+
+#include <stdlib.h>
+
+#include <math.h>
+
+# 1 
+static void rfft8pt(float *ioptr)
+{
+
+    float w0r = 1.0 / 1.414213562373095048801688724209698078569;
+    float w1r = 0.9238795325112867561281831893967882868224;
+    float w1i = 0.3826834323650897717284599840303988667613;
+    float f0r, f0i, f1r, f1i, f2r, f2i, f3r, f3i;
+    float f4r, f4i, f5r, f5i, f6r, f6i, f7r, f7i;
+    float t0r, t0i, t1r, t1i;
+    const float Two = 2.0;
+    const float scale = 0.5;
+
+
+    f0r = ioptr[0];
+    f0i = ioptr[1];
+    f1r = ioptr[8];
+    f1i = ioptr[9];
+    f2r = ioptr[4];
+    f2i = ioptr[5];
+    f3r = ioptr[12];
+    f3i = ioptr[13];
+    f4r = ioptr[2];
+    f4i = ioptr[3];
+    f5r = ioptr[10];
+    f5i = ioptr[11];
+    f6r = ioptr[6];
+    f6i = ioptr[7];
+    f7r = ioptr[14];
+    f7i = ioptr[15];
+# 2331 "/scratch/repos/new/home/jordi_armengol_estape/c-scraper/outputs/2022-01-22/02-19-57/repos/narner/AudioKit/refs/heads/master/AudioKit/Common/Internals/Soundpipe/lib/fft/fft.c"
+    t0r = f0r + f1r;
+    t0i = f0i + f1i;
+    f1r = f0r - f1r;
+    f1i = f0i - f1i;
+
+    t1r = f2r - f3r;
+    t1i = f2i - f3i;
+    f2r = f2r + f3r;
+    f2i = f2i + f3i;
+
+    f0r = t0r + f2r;
+    f0i = t0i + f2i;
+    f2r = t0r - f2r;
+    f2i = t0i - f2i;
+
+    f3r = f1r - t1i;
+    f3i = f1i + t1r;
+    f1r = f1r + t1i;
+    f1i = f1i - t1r;
+
+    t0r = f4r + f5r;
+    t0i = f4i + f5i;
+    f5r = f4r - f5r;
+    f5i = f4i - f5i;
+
+    t1r = f6r - f7r;
+    t1i = f6i - f7i;
+    f6r = f6r + f7r;
+    f6i = f6i + f7i;
+
+    f4r = t0r + f6r;
+    f4i = t0i + f6i;
+    f6r = t0r - f6r;
+    f6i = t0i - f6i;
+
+    f7r = f5r - t1i;
+    f7i = f5i + t1r;
+    f5r = f5r + t1i;
+    f5i = f5i - t1r;
+
+    t0r = f0r - f4r;
+    t0i = f4i - f0i;
+    f0r = f0r + f4r;
+    f0i = f0i + f4i;
+
+    t1r = f2r - f6i;
+    t1i = f2i + f6r;
+    f2r = f2r + f6i;
+    f2i = f2i - f6r;
+
+    f4r = f1r - f5r * w0r - f5i * w0r;
+    f4i = f1i + f5r * w0r - f5i * w0r;
+    f1r = f1r * Two - f4r;
+    f1i = f1i * Two - f4i;
+
+    f6r = f3r + f7r * w0r - f7i * w0r;
+    f6i = f3i + f7r * w0r + f7i * w0r;
+    f3r = f3r * Two - f6r;
+    f3i = f3i * Two - f6i;
+
+
+    f5r = f0r + f0i;
+    f5i = f0r - f0i;
+
+    f0r = f2r + t1r;
+    f0i = f2i - t1i;
+    f7r = f2i + t1i;
+    f7i = t1r - f2r;
+
+    f2r = f0r + w0r * f7r + w0r * f7i;
+    f2i = f0i - w0r * f7r + w0r * f7i;
+    t1r = Two * f0r - f2r;
+    t1i = f2i - Two * f0i;
+
+    f0r = f1r + f6r;
+    f0i = f1i - f6i;
+    f7r = f1i + f6i;
+    f7i = f6r - f1r;
+
+    f1r = f0r + w1r * f7r + w1i * f7i;
+    f1i = f0i - w1i * f7r + w1r * f7i;
+    f6r = Two * f0r - f1r;
+    f6i = f1i - Two * f0i;
+
+    f0r = f3r + f4r;
+    f0i = f3i - f4i;
+    f7r = f3i + f4i;
+    f7i = f4r - f3r;
+
+    f3r = f0r + w1i * f7r + w1r * f7i;
+    f3i = f0i - w1r * f7r + w1i * f7i;
+    f4r = Two * f0r - f3r;
+    f4i = f3i - Two * f0i;
+
+
+    ioptr[8] = t0r;
+    ioptr[9] = t0i;
+    ioptr[0] = f5r;
+    ioptr[1] = f5i;
+
+    ioptr[4] = scale * f2r;
+    ioptr[5] = scale * f2i;
+    ioptr[12] = scale * t1r;
+    ioptr[13] = scale * t1i;
+
+    ioptr[2] = scale * f1r;
+    ioptr[3] = scale * f1i;
+    ioptr[6] = scale * f3r;
+    ioptr[7] = scale * f3i;
+    ioptr[10] = scale * f4r;
+    ioptr[11] = scale * f4i;
+    ioptr[14] = scale * f6r;
+    ioptr[15] = scale * f6i;
+}

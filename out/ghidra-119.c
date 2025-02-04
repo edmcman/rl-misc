@@ -1,0 +1,8 @@
+#include <stdlib.h>
+
+#include <math.h>
+
+#include <stdio.h>
+
+# 1 
+undefined8 func0(ulong *param_1){int iVar1;ulong uVar2;int local_24;int local_20;long local_18;long local_10;if (((long)*param_1 < 0) || (DAT_00100320 == 0)) {DAT_00100320 = 1;uVar2 = (long)*param_1 >> 0x3f;_DAT_001004f8 = (long)(0x9a4ec86 - ((*param_1 ^ uVar2) - uVar2)) % 1000000000;local_10 = 1;local_18 = _DAT_001004f8;for (local_24 = 1; local_24 < 0x37; local_24 = local_24 + 1) {iVar1 = (local_24 * 0x15) % 0x37;*(long *)(&DAT_00100340 + (long)iVar1 * 8) = local_10;local_10 = local_18 - local_10;if (local_10 < 0) {local_10 = local_10 + 1000000000;}local_18 = *(long *)(&DAT_00100340 + (long)iVar1 * 8);}for (local_20 = 1; local_20 < 5; local_20 = local_20 + 1) {for (local_24 = 1; local_24 < 0x38; local_24 = local_24 + 1) {*(long *)(&DAT_00100340 + (long)local_24 * 8) =*(long *)(&DAT_00100340 + (long)local_24 * 8) -*(long *)(&DAT_00100340 + (long)((local_24 + 0x1e) % 0x37 + 1) * 8);if (*(long *)(&DAT_00100340 + (long)local_24 * 8) < 0) {*(long *)(&DAT_00100340 + (long)local_24 * 8) =*(long *)(&DAT_00100340 + (long)local_24 * 8) + 1000000000;}}}DAT_00100500 = 0;DAT_00100504 = 0x1f;*param_1 = 1;}DAT_00100500 = DAT_00100500 + 1;if (DAT_00100500 == 0x38) {DAT_00100500 = 1;}DAT_00100504 = DAT_00100504 + 1;if (DAT_00100504 == 0x38) {DAT_00100504 = 1;}local_18 = *(long *)(&DAT_00100340 + (long)DAT_00100500 * 8) -*(long *)(&DAT_00100340 + (long)DAT_00100504 * 8);if (local_18 < 0) {local_18 = local_18 + 1000000000;}*(long *)(&DAT_00100340 + (long)DAT_00100500 * 8) = local_18;return CONCAT44((int)((ulong)(DAT_00100508 * (double)local_18) >> 0x20),(float)(DAT_00100508 * (double)local_18));}

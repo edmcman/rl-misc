@@ -1,0 +1,3 @@
+
+# 1 
+bool func0(float param_1,float param_2,int param_3,long param_4,long param_5){bool bVar1;bool bVar2;int local_14;int local_10;bVar2 = false;bVar1 = false;local_10 = param_3 + -1;for (local_14 = 0; local_14 < param_3; local_14 = local_14 + 1) {if ((param_2 < *(float *)(param_5 + (long)local_10 * 4) !=param_2 < *(float *)(param_5 + (long)local_14 * 4)) &&(param_1 < *(float *)(param_4 + (long)local_14 * 4) +((param_2 - *(float *)(param_5 + (long)local_14 * 4)) *(*(float *)(param_4 + (long)local_10 * 4) -*(float *)(param_4 + (long)local_14 * 4))) /(*(float *)(param_5 + (long)local_10 * 4) -*(float *)(param_5 + (long)local_14 * 4)))) {bVar1 = !bVar2;bVar2 = bVar1;}local_10 = local_14;}return bVar1;}

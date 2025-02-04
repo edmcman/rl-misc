@@ -1,0 +1,4 @@
+#include <assert.h>
+
+# 1 
+void func0(int param_1,int param_2,long param_3,long param_4){undefined8 uVar1;int local_2c;int local_1c;local_2c = param_1;while( true ) {local_1c = local_2c * 2 + 1;if (param_2 < local_1c) {return;}if ((local_1c < param_2) &&(*(double *)(param_3 + (long)local_1c * 8) < *(double *)(param_3 + ((long)local_1c + 1) * 8))) {local_1c = local_2c * 2 + 2;}if (*(double *)(param_3 + (long)local_1c * 8) <= *(double *)(param_3 + (long)local_2c * 8))break;uVar1 = *(undefined8 *)(param_3 + (long)local_2c * 8);*(undefined8 *)(param_3 + (long)local_2c * 8) = *(undefined8 *)((long)local_1c * 8 + param_3);*(undefined8 *)(param_3 + (long)local_1c * 8) = uVar1;uVar1 = *(undefined8 *)(param_4 + (long)local_2c * 8);*(undefined8 *)(param_4 + (long)local_2c * 8) = *(undefined8 *)((long)local_1c * 8 + param_4);*(undefined8 *)(param_4 + (long)local_1c * 8) = uVar1;local_2c = local_1c;}return;}

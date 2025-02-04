@@ -1,0 +1,3 @@
+
+# 1 
+char * func0(char *param_1,long param_2,char *param_3){int local_14;char *local_10;local_10 = param_1;for (local_14 = 0; (local_14 < 8 && (' ' < *(char *)(param_2 + local_14)));local_14 = local_14 + 1) {*local_10 = *(char *)(param_2 + local_14);local_10 = local_10 + 1;}if (' ' < *param_3) {*local_10 = '.';for (local_14 = 0; (local_10 = local_10 + 1, local_14 < 3 && (' ' < param_3[local_14]));local_14 = local_14 + 1) {*local_10 = param_3[local_14];}}*local_10 = '\0';return param_1;}

@@ -1,0 +1,6 @@
+#include <math.h>
+
+#include <stdio.h>
+
+# 1 
+undefined8 func0(float *param_1,long param_2,long param_3){float fVar1;undefined8 uVar2;long in_FS_OFFSET;int local_30;float local_28 [6];long local_10;local_10 = *(long *)(in_FS_OFFSET + 0x28);for (local_30 = 0; local_30 < 3; local_30 = local_30 + 1) {fVar1 = *(float *)(param_2 + (long)local_30 * 4);if (param_1[local_30] <= 0.0) {local_28[local_30] = *(float *)(param_3 + (long)local_30 * 4) - fVar1;local_28[(long)local_30 + 3] =(float)(*(uint *)(param_3 + (long)local_30 * 4) ^ DAT_00100200) - fVar1;}else {local_28[local_30] = (float)(*(uint *)(param_3 + (long)local_30 * 4) ^ DAT_00100200) - fVar1;local_28[(long)local_30 + 3] = *(float *)(param_3 + (long)local_30 * 4) - fVar1;}}if (local_28[2] * param_1[2] + *param_1 * local_28[0] + local_28[1] * param_1[1] <= 0.0) {if (local_28[5] * param_1[2] + *param_1 * local_28[3] + local_28[4] * param_1[1] < 0.0) {uVar2 = 0;}else {uVar2 = 1;}}else {uVar2 = 0;}if (local_10 != *(long *)(in_FS_OFFSET + 0x28)) {/* WARNING: Subroutine does not return */__stack_chk_fail();}return uVar2;}

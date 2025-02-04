@@ -1,0 +1,3 @@
+
+# 1 
+void func0(int *param_1,int *param_2,int *param_3,int param_4){int iVar1;undefined4 local_34;undefined4 local_c;local_34 = param_4;if (0x3a < param_4) {local_34 = param_4 + 1;}local_c = (local_34 + 0x8e72) * 4 + -1;*param_3 = local_c / 0x5b5;local_c = local_c % 0x5b5;if (local_c < 0) {local_c = local_c + 0x5b5;*param_3 = *param_3 + -1;}if (local_c < 0) {local_c = local_c + 3;}iVar1 = (local_c >> 2) * 5 + 2;*param_2 = iVar1 / 0x99;*param_1 = iVar1 % 0x99;*param_1 = *param_1 / 5 + 1;if (*param_2 < 10) {*param_2 = *param_2 + 3;}else {*param_2 = *param_2 + -9;*param_3 = *param_3 + 1;}*param_3 = *param_3 + -100;return;}

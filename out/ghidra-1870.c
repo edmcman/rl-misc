@@ -1,0 +1,7 @@
+
+
+
+
+
+# 1 
+void func0(float param_1,float param_2,float param_3,float *param_4,float *param_5){float fVar1;float fVar2;float fVar3;undefined4 local_34;undefined4 local_30;undefined4 local_28;undefined4 local_24;fVar1 = DAT_00100320 * param_1;fVar2 = DAT_00100324 * param_1;fVar3 = fVar1 / DAT_00100328;local_34 = (float)((double)param_3 - (double)param_1 / DAT_00100330);if (local_34 <= 0.0) {local_34 = local_34 - fVar2 / DAT_00100328;}else {local_34 = local_34 + fVar2 / DAT_00100328;}if (param_2 <= 0.0) {local_30 = param_2 - fVar3;}else {local_30 = param_2 + fVar3;}*param_5 = (float)(int)(local_34 / fVar2) * fVar2;*param_4 = (float)(int)(local_30 / fVar1) * fVar1;local_24 = local_34 - *param_5;local_28 = local_30 - *param_4;if (local_24 < 0.0) {local_24 = local_24 + fVar2;}if (local_28 < 0.0) {local_28 = local_28 + fVar1;}if (((int)(local_34 / fVar2) & 1U) == 0) {if (local_24 <= fVar2 - (fVar3 - local_28) * DAT_00100338) {if (fVar2 - (local_28 - fVar3) * DAT_00100338 < local_24) {*param_5 = *param_5 + fVar2;*param_4 = *param_4 + fVar3;}}else {*param_5 = *param_5 + fVar2;*param_4 = *param_4 - fVar3;}}else if (fVar3 < local_28) {if (fVar2 - (fVar1 - local_28) * DAT_00100338 <= local_24) {*param_5 = *param_5 + fVar2;}else {*param_4 = *param_4 + fVar3;}}else if (fVar2 - local_28 * DAT_00100338 <= local_24) {*param_5 = *param_5 + fVar2;}else {*param_4 = *param_4 - fVar3;}return;}

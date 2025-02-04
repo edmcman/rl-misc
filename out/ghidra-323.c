@@ -1,0 +1,3 @@
+
+# 1 
+ulong func0(uint param_1,uint param_2,uint *param_3){long lVar1;long lVar2;long lVar3;ulong uVar4;uint uVar5;long in_FS_OFFSET;lVar1 = *(long *)(in_FS_OFFSET + 0x28);lVar2 = (ulong)(param_1 & 0x3f) + 0x1f;lVar3 = (ulong)(param_2 & 3) + 4;uVar4 = lVar2 * lVar3;uVar5 = (uint)(SEXT816((long)uVar4) != SEXT816(lVar2) * SEXT816(lVar3));if (uVar4 - (long)(char)uVar4 != 0) {uVar5 = 1;}*param_3 = uVar5;if (lVar1 != *(long *)(in_FS_OFFSET + 0x28)) {/* WARNING: Subroutine does not return */__stack_chk_fail();}return uVar4 & 0xff;}

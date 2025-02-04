@@ -1,0 +1,4 @@
+#include <stdio.h>
+
+# 1 
+void func0(long param_1,long param_2){undefined4 local_10;undefined4 local_c;local_c = 0;for (local_10 = 0; *(char *)(param_1 + local_10) != '\0'; local_10 = local_10 + 1) {if ((((((*(char *)(param_1 + local_10) == 'a') || (*(char *)(param_1 + local_10) == 'A')) ||(*(char *)(param_1 + local_10) == 'e')) ||((*(char *)(param_1 + local_10) == 'E' || (*(char *)(param_1 + local_10) == 'i')))) ||((*(char *)(param_1 + local_10) == 'I' ||((*(char *)(param_1 + local_10) == 'o' || (*(char *)(param_1 + local_10) == 'O')))))) ||((*(char *)(param_1 + local_10) == 'u' || (*(char *)(param_1 + local_10) == 'U')))) {*(undefined *)(param_2 + local_c) = *(undefined *)(param_1 + local_10);local_c = local_c + 1;}}*(undefined *)(param_2 + local_c) = 0;return;}

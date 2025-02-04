@@ -1,0 +1,4 @@
+#include <stdio.h>
+
+# 1 
+void func0(int *param_1,undefined4 *param_2,int param_3,long param_4){undefined4 local_1c;undefined4 local_18;undefined4 local_14;undefined4 local_10;undefined4 local_c;local_1c = 0;local_c = 0;for (local_18 = 0; local_10 = 0, local_18 < param_3; local_18 = local_18 + 1) {local_1c = local_1c + *(int *)(param_4 + (long)local_18 * 4);for (local_14 = 0; local_14 < param_3; local_14 = local_14 + 1) {if (*(int *)(param_4 + (long)local_18 * 4) == *(int *)(param_4 + (long)local_14 * 4)) {local_10 = local_10 + 1;}}if (local_c < local_10) {local_c = local_10;*param_2 = *(undefined4 *)(param_4 + (long)local_18 * 4);}}*param_1 = local_1c / param_3;return;}

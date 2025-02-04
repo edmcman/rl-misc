@@ -1,0 +1,3 @@
+
+# 1 
+char * func0(char *param_1,char *param_2,int param_3){char *pcVar1;char cVar2;int local_2c;char *local_28;char *local_20;local_2c = param_3;local_28 = param_2;local_20 = param_1;if (0 < param_3) {do {local_2c = local_2c + -1;if (local_2c < 1) break;pcVar1 = local_20 + 1;*local_20 = *local_28;cVar2 = *local_20;local_28 = local_28 + 1;local_20 = pcVar1;} while (cVar2 != '\0');*local_20 = '\0';}return param_1;}

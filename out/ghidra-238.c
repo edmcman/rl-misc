@@ -1,0 +1,3 @@
+
+# 1 
+long func0(long param_1,int param_2,undefined8 param_3,char *param_4){char *local_20;char local_18;int local_14;local_20 = param_4;if (*param_4 == '\0') {*(undefined *)(param_1 + param_2) = 0;}else {for (; *local_20 == ' '; local_20 = local_20 + 1) {}if (((((*local_20 == '+') || (*local_20 == '-')) || (*local_20 == '*')) ||((*local_20 == '/' || (*local_20 == '%')))) || ((*local_20 == '(' || (*local_20 == ')')))) {*(char *)(param_2 + param_1) = *local_20;*(undefined *)(param_1 + (long)param_2 + 1) = 0;}else {local_18 = *local_20;local_14 = param_2;while (('/' < local_18 && (local_18 < ':'))) {*(char *)(local_14 + param_1) = local_18;local_20 = local_20 + 1;local_14 = local_14 + 1;local_18 = *local_20;}*(undefined *)(param_1 + local_14) = 0;}}return param_1;}

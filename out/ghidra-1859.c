@@ -1,0 +1,6 @@
+#include <math.h>
+
+#include <stdio.h>
+
+# 1 
+float func0(long *param_1){int iVar1;float fVar2;int local_18;if (*param_1 < 1) {if (*param_1 < 0) {*param_1 = -*param_1;}else {*param_1 = 1;}DAT_00100308 = *param_1;for (local_18 = 0x27; -1 < local_18; local_18 = local_18 + -1) {*param_1 = (*param_1 / 0xd1a4) * -0x7fffffab + *param_1 * 0x9c4e;if (*param_1 < 0) {*param_1 = *param_1 + 0x7fffffab;}if (local_18 < 0x20) {(&DAT_00100320)[local_18] = *param_1;}}DAT_00100420 = DAT_00100320;}*param_1 = (*param_1 / 0xd1a4) * -0x7fffffab + *param_1 * 0x9c4e;if (*param_1 < 0) {*param_1 = *param_1 + 0x7fffffab;}DAT_00100308 = DAT_00100308 * 0x9ef4 + (DAT_00100308 / 0xce26) * -0x7fffff07;if (DAT_00100308 < 0) {DAT_00100308 = DAT_00100308 + 0x7fffff07;}iVar1 = (int)(DAT_00100420 / 0x3fffffe);DAT_00100420 = (&DAT_00100320)[iVar1] - DAT_00100308;(&DAT_00100320)[iVar1] = *param_1;if (DAT_00100420 < 1) {DAT_00100420 = DAT_00100420 + 0x7fffffaa;}fVar2 = DAT_00100428 * (float)DAT_00100420;if (_DAT_00100430 < (double)fVar2) {fVar2 = DAT_00100438;}return fVar2;}

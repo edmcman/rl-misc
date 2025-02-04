@@ -1,0 +1,3 @@
+
+# 1 
+int func0(int param_1,long param_2,int param_3){int iVar1;ssize_t sVar2;long in_FS_OFFSET;char local_19;int local_18;int local_14;long local_10;local_10 = *(long *)(in_FS_OFFSET + 0x28);local_18 = 0;do {if (param_3 <= local_18) break;sVar2 = read(param_1,&local_19,1);local_14 = (int)sVar2;if (local_14 != 1) {if (local_14 < 0) {iVar1 = -1;goto LAB_0010009b;}break;}iVar1 = local_18 + 1;*(char *)(local_18 + param_2) = local_19;local_18 = iVar1;} while (local_19 != '\n');*(undefined *)(param_2 + local_18) = 0;iVar1 = local_18;LAB_0010009b:if (local_10 == *(long *)(in_FS_OFFSET + 0x28)) {return iVar1;}/* WARNING: Subroutine does not return */__stack_chk_fail();}

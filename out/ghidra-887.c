@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1,long param_2,long param_3){undefined4 local_18;undefined4 local_14;undefined8 local_10;for (local_18 = 0; local_18 < 4; local_18 = local_18 + 1) {local_10 = 0.0;for (local_14 = 0; local_14 < 4; local_14 = local_14 + 1) {local_10 = *(double *)(param_2 + (long)local_14 * 8) **(double *)((long)local_18 * 0x20 + param_1 + (long)local_14 * 8) + local_10;}*(double *)(param_3 + (long)local_18 * 8) = local_10;}return;}

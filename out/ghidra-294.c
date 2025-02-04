@@ -1,0 +1,4 @@
+#include <stdlib.h>
+
+# 1 
+void func0(undefined4 *param_1){undefined4 uVar1;long lVar2;undefined2 uVar3;long in_FS_OFFSET;undefined4 local_14;lVar2 = *(long *)(in_FS_OFFSET + 0x28);uVar1 = *param_1;local_14._0_1_ = (undefined)uVar1;local_14._3_1_ = (undefined)((uint)uVar1 >> 0x18);local_14._1_1_ = (undefined)((uint)uVar1 >> 8);local_14._2_1_ = (undefined)((uint)uVar1 >> 0x10);uVar3 = CONCAT11((undefined)local_14,local_14._1_1_);local_14 = CONCAT22(uVar3,CONCAT11(local_14._2_1_,local_14._3_1_));*param_1 = local_14;if (lVar2 != *(long *)(in_FS_OFFSET + 0x28)) {/* WARNING: Subroutine does not return */__stack_chk_fail(*param_1);}return;}

@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1,int *param_2,int *param_3){char cVar1;int iVar2;int iVar3;int local_14;iVar3 = *param_3;iVar2 = *param_2;for (local_14 = iVar2;(local_14 < iVar3 &&((((cVar1 = *(char *)(param_1 + local_14), cVar1 == ' ' || (cVar1 == '\t')) || (cVar1 == '\n')) || (cVar1 == '\r')))); local_14 = local_14 + 1) {}*param_2 = local_14;local_14 = iVar3;do {local_14 = local_14 + -1;if (local_14 < iVar2) break;cVar1 = *(char *)(param_1 + local_14);} while (((cVar1 == ' ') || (cVar1 == '\t')) || ((cVar1 == '\n' || (cVar1 == '\r'))));*param_3 = local_14;return;}

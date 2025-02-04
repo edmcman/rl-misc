@@ -1,0 +1,4 @@
+
+
+# 1 
+char * func0(char *param_1,uint *param_2){char local_19;uint local_18;int local_14;char *local_10;local_18 = 0;local_14 = 0;local_19 = *param_1;local_10 = param_1;if (local_19 == '\0') {*param_2 = 0;}else {do {if (((int)local_19 & 0xc0U) == 0x80) {local_18 = (int)local_19 & 0x7fU | local_18 << 6;}else {local_14 = 0;for (; local_19 < '\0'; local_19 = local_19 * '\x02') {local_14 = local_14 + 1;}local_18 = (int)local_19 >> ((byte)local_14 & 0x1f);}param_1 = local_10 + 1;local_19 = *param_1;} while ((local_19 != '\0') && (local_14 = local_14 + -1, local_10 = param_1, 0 < local_14));*param_2 = local_18;}return param_1;}

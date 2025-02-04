@@ -1,0 +1,3 @@
+
+# 1 
+int func0(long param_1,int param_2){uint uVar1;int iVar2;uint uVar3;int local_10;local_10 = 0;do {if (*(int *)(param_1 + (long)local_10 * 4) != -1) {uVar3 = ~*(uint *)(param_1 + (long)local_10 * 4);uVar1 = 0x1f;if (uVar3 != 0) {for (; uVar3 >> uVar1 == 0; uVar1 = uVar1 - 1) {}}*(uint *)(param_1 + (long)local_10 * 4) =*(uint *)(param_1 + (long)local_10 * 4) | 0x80000000U >> ((byte)(uVar1 ^ 0x1f) & 0x1f);return (uVar1 ^ 0x1f) + local_10 * 0x20;}local_10 = local_10 + 1;iVar2 = param_2;if (param_2 < 0) {iVar2 = param_2 + 0x1f;}} while (local_10 != iVar2 >> 5);return -1;}

@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1,double *param_2){double dVar1;dVar1 = *(double *)(param_1 + 0x10) / *(double *)(param_1 + 8);if ((dVar1 <= 0.0) || (DAT_00100208 <= dVar1)) {if ((DAT_00100208 <= dVar1) && (dVar1 < DAT_00100218)) {dVar1 = DAT_00100218 - dVar1;param_2[1] = (DAT_00100230 * dVar1 - DAT_00100238 * dVar1 * dVar1) /(DAT_00100248 * dVar1 * dVar1 + (DAT_00100218 - dVar1 * DAT_00100240));*param_2 = *(double *)(param_1 + 0x10) / param_2[1];}}else {dVar1 = DAT_00100200 * dVar1 * dVar1;param_2[1] = (DAT_00100218 - dVar1 * DAT_00100210) /(DAT_00100228 * dVar1 * dVar1 * dVar1 + (dVar1 - dVar1 * dVar1 * DAT_00100220));*param_2 = *(double *)(param_1 + 8) / param_2[1];}return;}

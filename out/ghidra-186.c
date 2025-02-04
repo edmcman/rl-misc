@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1,int param_2){bool bVar1;undefined4 local_10;bVar1 = true;for (local_10 = 0; local_10 < param_2; local_10 = local_10 + 1) {if (bVar1) {if (*(int *)(param_1 + (long)local_10 * 4) == 0) {*(int *)(param_1 + (long)local_10 * 4) = *(int *)(param_1 + (long)local_10 * 4) + 1;bVar1 = false;}else if (*(int *)(param_1 + (long)local_10 * 4) == 1) {*(undefined4 *)(param_1 + (long)local_10 * 4) = 0;}}}return;}

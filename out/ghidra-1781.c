@@ -1,0 +1,3 @@
+
+# 1 
+undefined8 func0(int param_1,int param_2,long param_3,ushort param_4,long param_5,ushort param_6,long param_7){undefined4 local_30;undefined4 local_2c;undefined8 local_28;local_28 = 0.0;for (local_2c = 0; local_2c < param_1; local_2c = local_2c + 1) {if (((int)(uint)(param_4 & param_6) >> ((byte)local_2c & 0x1f) & 1U) != 0) {for (local_30 = 0; local_30 < param_2; local_30 = local_30 + 1) {local_28 = (double)(*(float *)(param_3 + (long)(local_2c * param_2) * 4 + (long)local_30 * 4) **(float *)(param_5 + (long)(local_2c * param_2) * 4 + (long)local_30 * 4)* *(float *)(param_7 + (long)(local_2c * param_2) * 4 +(long)local_30 * 4)) + local_28;}}}return CONCAT44((int)((ulong)(local_28 / (double)param_2) >> 0x20),(float)(local_28 / (double)param_2));}

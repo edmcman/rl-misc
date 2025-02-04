@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1,int *param_2,int *param_3,int *param_4){long lVar1;long lVar2;int iVar3;long lVar4;undefined8 local_40;local_40 = param_1;if (0x231518 < param_1) {lVar1 = (param_1 * 100 + -0xb212559) / 0x37bb49;lVar4 = lVar1;if (lVar1 < 0) {lVar4 = lVar1 + 3;}local_40 = (param_1 + 1 + lVar1) - (lVar4 >> 2);}local_40 = local_40 + 0x5f4;lVar4 = (local_40 * 100 + -0x2fb2) / 0x8ead;lVar2 = (lVar4 * 0x8ead) / 100;lVar1 = ((local_40 - lVar2) * 10000) / 0x4ab51;*param_2 = ((int)local_40 - (int)lVar2) - (int)((lVar1 * 0x4ab51) / 10000);if (lVar1 < 0xe) {iVar3 = (int)lVar1 + -1;}else {iVar3 = (int)lVar1 + -0xd;}*param_3 = iVar3;iVar3 = (int)lVar4;if (*param_3 < 3) {iVar3 = iVar3 + -0x126b;}else {iVar3 = iVar3 + -0x126c;}*param_4 = iVar3;return;}

@@ -1,0 +1,22 @@
+#include <stdint.h>
+
+#include <stdbool.h>
+
+# 1 
+#include "defs.h"
+_BYTE * func0(_BYTE *a1, _BYTE *a2)
+{
+_BYTE *v2; // rax
+_BYTE *v3; // rax
+_BYTE *v6; // [rsp+8h] [rbp-18h]
+
+v6 = a1;
+do
+{
+v2 = v6++;
+*v2 = *a2;
+v3 = a2++;
+}
+while ( *v3 );
+return a1;
+}

@@ -1,0 +1,3 @@
+
+# 1 
+int func0(long param_1,short param_2){short sVar1;short sVar2;short sVar3;short sVar4;short sVar5;short sVar6;sVar1 = *(short *)(param_1 + 2);sVar2 = *(short *)(param_1 + 2);sVar3 = *(short *)(param_1 + 4);sVar4 = *(short *)(param_1 + 4);sVar5 = *(short *)(param_1 + 2);sVar6 = *(short *)(param_1 + 4);*(undefined2 *)(param_1 + 2) = 0;*(undefined2 *)(param_1 + 4) = 0;return (int)(short)(((long)sVar4 * (long)sVar3 + (long)sVar2 * (long)sVar1) -(long)sVar6 * ((long)param_2 * (long)sVar5 >> 0xe) >> 9);}

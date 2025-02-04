@@ -1,0 +1,4 @@
+#include <sys/cdefs.h>
+
+# 1 
+undefined8 func0(short *param_1,undefined2 *param_2){undefined8 uVar1;if ((((*param_1 == 0x3f) || (*param_1 == 0x21)) || (*param_1 == 0x3a)) ||(((*param_1 == 0x3d || (*param_1 == 0x29)) ||((*param_1 == 0x5d || ((*param_1 == 0x2f || (*param_1 == 0x2c)))))))) {switch(*param_1) {case 0x21:*param_2 = 8;break;case 0x29:*param_2 = 2;break;case 0x2c:*param_2 = 0x100;break;case 0x2f:*param_2 = 0x40;break;case 0x3a:*param_2 = 0x20;break;case 0x3d:*param_2 = 0x80;break;case 0x3f:*param_2 = 4;break;case 0x5d:*param_2 = 1;}*param_1 = 0x2a;uVar1 = 1;}else if ((((*param_1 < 0x61) || (0x7a < *param_1)) && (*param_1 != 0x1b)) && (*param_1 != 0x2a)) {uVar1 = 0;}else {uVar1 = 1;}return uVar1;}

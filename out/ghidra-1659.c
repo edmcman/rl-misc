@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1,int *param_2,int *param_3,int *param_4){undefined4 local_c;local_c = 0;*param_2 = 0;*param_3 = 0;for (; ((*(char *)(param_1 + local_c) == ' ' || (*(char *)(param_1 + local_c) == '\t')) ||(*(char *)(param_1 + local_c) == '\n')); local_c = local_c + 1) {}if (*(char *)(param_1 + local_c) == '\0') {*param_4 = local_c;}*param_2 = local_c;for (local_c = 0; *(char *)(param_1 + local_c) != '\0'; local_c = local_c + 1) {}do {do {local_c = local_c + -1;} while (*(char *)(param_1 + local_c) == ' ');} while ((*(char *)(param_1 + local_c) == '\t') || (*(char *)(param_1 + local_c) == '\n'));*param_3 = local_c;return;}

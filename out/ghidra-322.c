@@ -1,0 +1,3 @@
+
+# 1 
+void func0(double param_1,int *param_2,int *param_3,int *param_4){int iVar1;int iVar2;int iVar3;int iVar4;iVar1 = ((int)(DAT_00100170 + param_1) + 0x579) / 0x5b5;iVar2 = (int)(DAT_00100170 + param_1) + 0x57a + iVar1 * -0x5b5;iVar3 = (iVar2 + -1) / 0x16d - iVar2 / 0x5b5;iVar4 = iVar2 + iVar3 * -0x16d + 0x1e;iVar2 = (iVar4 * 0x50) / 0x98f;*param_4 = iVar4 - (iVar2 * 0x98f) / 0x50;*param_3 = iVar2 + 2 + (iVar2 / 0xb) * -0xc;*param_2 = iVar2 / 0xb + iVar1 * 4 + iVar3 + -0x126c;return;}

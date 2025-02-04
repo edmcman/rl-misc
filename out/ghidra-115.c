@@ -1,0 +1,10 @@
+
+
+
+
+
+
+
+
+# 1 
+void func0(float *param_1,long param_2){float fVar1;float fVar2;float fVar3;float fVar4;float fVar5;float fVar6;float fVar7;float fVar8;float fVar9;float fVar10;float fVar11;float fVar12;float fVar13;float fVar14;float fVar15;float fVar16;float fVar17;float fVar18;fVar18 = *(float *)(param_2 + 4);fVar1 = param_1[8] + *param_1 + param_1[0xc] + param_1[4];fVar2 = param_1[9] + param_1[1] + param_1[0xd] + param_1[5];fVar3 = (param_1[8] + *param_1) - (param_1[0xc] + param_1[4]);fVar4 = (param_1[9] + param_1[1]) - (param_1[0xd] + param_1[5]);fVar5 = (*param_1 - param_1[8]) - (param_1[5] - param_1[0xd]);fVar6 = (param_1[1] - param_1[9]) + (param_1[4] - param_1[0xc]);fVar7 = (*param_1 - param_1[8]) + (param_1[5] - param_1[0xd]);fVar8 = (param_1[1] - param_1[9]) - (param_1[4] - param_1[0xc]);fVar9 = param_1[10] + param_1[2] + param_1[0xe] + param_1[6];fVar10 = param_1[0xb] + param_1[3] + param_1[0xf] + param_1[7];fVar11 = (param_1[10] + param_1[2]) - (param_1[0xe] + param_1[6]);fVar12 = (param_1[0xb] + param_1[3]) - (param_1[0xf] + param_1[7]);fVar13 = (param_1[2] - param_1[10]) - (param_1[7] - param_1[0xf]);fVar14 = (param_1[3] - param_1[0xb]) + (param_1[6] - param_1[0xe]);fVar15 = (param_1[2] - param_1[10]) + (param_1[7] - param_1[0xf]);fVar16 = (param_1[3] - param_1[0xb]) - (param_1[6] - param_1[0xe]);fVar17 = (fVar13 - fVar14) * fVar18;fVar13 = (fVar13 + fVar14) * fVar18;fVar14 = (fVar15 - fVar16) * fVar18;fVar18 = (fVar15 + fVar16) * fVar18;param_1[8] = fVar5 + fVar17;param_1[9] = fVar6 + fVar13;param_1[10] = fVar5 - fVar17;param_1[0xb] = fVar6 - fVar13;param_1[0xc] = fVar7 - fVar18;param_1[0xd] = fVar8 + fVar14;param_1[0xe] = fVar7 + fVar18;param_1[0xf] = fVar8 - fVar14;*param_1 = fVar1 + fVar9;param_1[1] = fVar2 + fVar10;param_1[2] = fVar1 - fVar9;param_1[3] = fVar2 - fVar10;param_1[4] = fVar3 - fVar12;param_1[5] = fVar4 + fVar11;param_1[6] = fVar3 + fVar12;param_1[7] = fVar4 - fVar11;return;}

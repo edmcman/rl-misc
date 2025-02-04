@@ -1,0 +1,3 @@
+
+# 1 
+void func0(int param_1,char *param_2){char *pcVar1;char *local_28;int local_1c;pcVar1 = param_2;local_1c = param_1;if (param_1 < 0) {local_1c = -param_1;pcVar1 = param_2;}do {local_28 = pcVar1;pcVar1 = local_28 + 1;*local_28 = (char)local_1c + (char)(local_1c / 10) * -10 + '0';local_1c = local_1c / 10;} while (0 < local_1c);if (param_1 < 0) {*pcVar1 = '-';pcVar1 = local_28 + 2;}local_28 = pcVar1;*local_28 = '\0';return;}

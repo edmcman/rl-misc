@@ -1,0 +1,3 @@
+
+# 1 
+void func0(double param_1,double param_2,double *param_3,double *param_4,double *param_5){*param_5 = (param_4[2] * param_3[2] + *param_3 * *param_4 + param_4[1] * param_3[1]) * param_1 +*param_5 * param_2;param_5[1] = (param_4[2] * param_3[5] + param_3[3] * *param_4 + param_4[1] * param_3[4]) * param_1+ param_5[1] * param_2;param_5[2] = (param_4[2] * param_3[8] + param_3[6] * *param_4 + param_4[1] * param_3[7]) * param_1+ param_5[2] * param_2;return;}

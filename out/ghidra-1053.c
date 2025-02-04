@@ -1,0 +1,4 @@
+#include <stdio.h>
+
+# 1 
+void func0(long param_1,long param_2){int iVar1;char cVar2;bool bVar3;undefined4 local_14;undefined4 local_10;local_10 = 0;bVar3 = false;local_14 = 0;do {if (*(char *)(param_2 + local_14) == '\0') {*(undefined *)(param_1 + local_10) = 0;return;}cVar2 = *(char *)(param_2 + local_14);if (cVar2 == 't') {LAB_00100081:if (bVar3) {*(undefined *)(param_1 + local_10) = 9;bVar3 = false;local_10 = local_10 + 1;goto LAB_001000da;}LAB_001000a6:iVar1 = local_10 + 1;*(undefined *)(local_10 + param_1) = *(undefined *)(local_14 + param_2);local_10 = iVar1;if (bVar3) {bVar3 = false;}}else {if ('t' < cVar2) goto LAB_001000a6;if (cVar2 == '\\') {bVar3 = true;}else {if (cVar2 != 'n') goto LAB_001000a6;if (!bVar3) goto LAB_00100081;*(undefined *)(param_1 + local_10) = 10;bVar3 = false;local_10 = local_10 + 1;}}LAB_001000da:local_14 = local_14 + 1;} while( true );}

@@ -1,0 +1,3 @@
+
+# 1 
+undefined * func0(uint param_1,uint param_2,undefined *param_3,int param_4){uint local_20;uint local_1c;int local_c;local_c = 0;local_20 = param_2;local_1c = param_1;if (param_4 != 0) {*param_3 = 0x2d;local_c = 1;}for (; 0 < (int)local_1c; local_1c = (int)local_1c / 10) {param_3[local_c] = (char)(local_20 / local_1c) + '0';local_20 = local_20 % local_1c;local_c = local_c + 1;}param_3[local_c] = 0;return param_3;}

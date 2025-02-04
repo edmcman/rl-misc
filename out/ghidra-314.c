@@ -1,0 +1,3 @@
+
+# 1 
+void func0(ulong param_1,ulong param_2,long *param_3,long *param_4){ulong uVar1;ulong uVar2;long lVar3;long lVar4;undefined8 local_58;undefined8 local_50;undefined8 local_48;undefined8 local_40;undefined8 local_38;undefined8 local_30;local_48 = 1;local_40 = 0;local_38 = 0;local_30 = 1;local_58 = param_2;local_50 = param_1;while (local_58 != 0) {uVar1 = local_50 / local_58;uVar2 = local_50 % local_58;local_50 = local_58;lVar3 = local_48 - local_40 * uVar1;local_48 = local_40;lVar4 = local_38 - local_30 * uVar1;local_38 = local_30;local_58 = uVar2;local_40 = lVar3;local_30 = lVar4;}*param_3 = local_48;*param_4 = local_38;return;}

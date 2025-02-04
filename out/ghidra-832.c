@@ -1,0 +1,3 @@
+
+# 1 
+char * func0(uint *param_1){char *pcVar1;if ((*param_1 & 1) == 0) {if ((*param_1 & 2) == 0) {if ((*param_1 & 4) == 0) {if ((*param_1 & 8) == 0) {if ((*param_1 & 0x10) == 0) {if ((*param_1 & 0x20) == 0) {*param_1 = 0;pcVar1 = "error!";}else {*param_1 = *param_1 & 0xffffffdf;pcVar1 = "^2leg";}}else {*param_1 = *param_1 & 0xffffffef;pcVar1 = "^4right arm";}}else {*param_1 = *param_1 & 0xfffffff7;pcVar1 = "^4left arm";}}else {*param_1 = *param_1 & 0xfffffffb;pcVar1 = "^4back";}}else {*param_1 = *param_1 & 0xfffffffd;pcVar1 = "^4chest";}}else {*param_1 = *param_1 & 0xfffffffe;pcVar1 = "^1head";}return pcVar1;}

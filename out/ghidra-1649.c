@@ -1,0 +1,3 @@
+
+# 1 
+double func0(double param_1,double *param_2,float *param_3){return ((param_1 - param_2[1]) * (double)param_3[2] * (param_1 - *param_2)) /((param_2[2] - *param_2) * (param_2[2] - param_2[1])) +((param_1 - param_2[2]) * (double)*param_3 * (param_1 - param_2[1])) /((*param_2 - param_2[1]) * (*param_2 - param_2[2])) +((param_1 - param_2[2]) * (double)param_3[1] * (param_1 - *param_2)) /((param_2[1] - *param_2) * (param_2[1] - param_2[2]));}

@@ -1,0 +1,3 @@
+
+# 1 
+char * func0(char *param_1,char *param_2){char cVar1;char *local_18;char *local_10;for (local_10 = param_1; cVar1 = *local_10, local_18 = param_2, cVar1 == '/';local_10 = local_10 + 1) {}while (((local_10 < param_1 + 0x80 && (cVar1 != '/')) && (cVar1 != '\0'))) {if (local_18 < param_2 + 0xc) {*local_18 = cVar1;local_18 = local_18 + 1;}local_10 = local_10 + 1;cVar1 = *local_10;}while ((cVar1 == '/' && (local_10 < param_1 + 0x80))) {local_10 = local_10 + 1;cVar1 = *local_10;}if (local_18 < param_2 + 0xc) {*local_18 = '\0';}return local_10;}

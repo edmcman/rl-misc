@@ -1,0 +1,3 @@
+
+# 1 
+void func0(double *param_1,double *param_2){double dVar1;double dVar2;double dVar3;double dVar4;double dVar5;double dVar6;double dVar7;dVar6 = *param_1;dVar1 = param_1[1];dVar2 = param_1[2];dVar3 = param_1[3];dVar4 = dVar6 + dVar6;dVar5 = dVar1 + dVar1;dVar6 = dVar4 * dVar6 - DAT_00100230;dVar7 = (dVar2 + dVar2) * dVar3;*param_2 = dVar6 + dVar5 * dVar1;param_2[1] = dVar5 * dVar2 - dVar4 * dVar3;param_2[2] = dVar5 * dVar3 + dVar4 * dVar2;param_2[3] = dVar5 * dVar2 + dVar4 * dVar3;param_2[4] = dVar6 + (dVar2 + dVar2) * dVar2;param_2[5] = dVar7 - dVar4 * dVar1;param_2[6] = dVar5 * dVar3 - dVar4 * dVar2;param_2[7] = dVar7 + dVar4 * dVar1;param_2[8] = dVar6 + (dVar3 + dVar3) * dVar3;return;}

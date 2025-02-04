@@ -1,0 +1,3 @@
+
+# 1 
+void func0(char *param_1){char cVar1;char *pcVar2;uint uVar3;char *pcVar4;uVar3 = 0;for (pcVar2 = param_1; pcVar4 = param_1, *pcVar2 != '\0'; pcVar2 = pcVar2 + 1) {}for (; pcVar2 = pcVar2 + -1, pcVar4 < pcVar2; pcVar4 = pcVar4 + 1) {cVar1 = *pcVar4;*pcVar4 = *pcVar2;*pcVar2 = cVar1;}for (; *param_1 != '\0'; param_1 = param_1 + 1) {cVar1 = *param_1;if (cVar1 == '\\') {if (uVar3 != 0) {*param_1 = param_1[-1];param_1[-1] = '\\';}}else if (cVar1 < ']') {if (cVar1 == '\"') {if (uVar3 == 0) {uVar3 = 2;}else if (((uVar3 & 2) != 0) && (param_1[1] != '\\')) {uVar3 = uVar3 & 0xfffffffd;}}else if (cVar1 == '\'') {if (uVar3 == 0) {uVar3 = 1;}else if (((uVar3 & 1) != 0) && (param_1[1] != '\\')) {uVar3 = uVar3 & 0xfffffffe;}}}}return;}

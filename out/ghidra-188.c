@@ -1,0 +1,4 @@
+#include <ctype.h>
+
+# 1 
+void func0(char *param_1,char *param_2){char *pcVar1;char *local_28;char *local_20;char local_a;char local_9;local_a = '\0';local_9 = '\0';local_20 = param_1;for (local_28 = param_2; *local_28 != '\0'; local_28 = local_28 + 1) {pcVar1 = strchr("\x01\x02\x0f\x1f\x16",(int)*local_28);if (pcVar1 == (char *)0x0) {if (*local_28 == '\x03') {local_a = '\x01';local_9 = '\0';}else if ((*local_28 < '0') || ('9' < *local_28)) {if ((*local_28 == ',') && (local_a != '\0')) {local_9 = '\x01';}else {*local_20 = *local_28;local_20 = local_20 + 1;}}else if (local_a == '\0') {*local_20 = *local_28;local_20 = local_20 + 1;}else {local_a = local_a + '\x01';if (local_9 + 2 < (int)local_a) {local_9 = '\0';local_a = '\0';}}}}*local_20 = '\0';return;}

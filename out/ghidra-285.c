@@ -1,0 +1,4 @@
+#include <stdio.h>
+
+# 1 
+void func0(float *param_1,float *param_2){double dVar1;double dVar2;double dVar3;double dVar4;double dVar5;double dVar6;double dVar7;double dVar8;double dVar9;double dVar10;dVar1 = (double)*param_1;dVar2 = (double)param_1[3];dVar3 = (double)param_1[5];dVar4 = (double)param_1[1];dVar5 = (double)param_1[2];dVar6 = (double)param_1[4];dVar7 = dVar2 * dVar3 - dVar6 * dVar6;dVar8 = dVar4 * dVar3 - dVar5 * dVar6;dVar9 = dVar4 * dVar6 - dVar5 * dVar2;dVar10 = DAT_00100220 / (dVar7 * dVar1 + (dVar9 * dVar5 - dVar8 * dVar4));*param_2 = (float)(dVar7 * dVar10);param_2[1] = (float)((double)((ulong)dVar8 ^ DAT_00100230) * dVar10);param_2[2] = (float)(dVar9 * dVar10);param_2[3] = (float)((dVar1 * dVar3 - dVar5 * dVar5) * dVar10);param_2[4] = (float)((dVar4 * dVar5 - dVar1 * dVar6) * dVar10);param_2[5] = (float)((dVar1 * dVar2 - dVar4 * dVar4) * dVar10);return;}

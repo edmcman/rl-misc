@@ -1,0 +1,3 @@
+
+# 1 
+void func0(float param_1,long param_2,long param_3,long param_4,long param_5){float fVar1;undefined4 local_10;for (local_10 = 0; local_10 < 3; local_10 = local_10 + 1) {fVar1 = *(float *)(param_3 + (long)local_10 * 4) - *(float *)(param_2 + (long)local_10 * 4);*(int *)((long)local_10 * 4 + param_4) = (int)(fVar1 / param_1);*(float *)(param_5 + (long)local_10 * 4) = fVar1 / (float)*(int *)(param_4 + (long)local_10 * 4);}return;}

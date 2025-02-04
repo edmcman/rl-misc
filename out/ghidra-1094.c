@@ -1,0 +1,3 @@
+
+# 1 
+char * func0(char *param_1,int param_2){long in_FS_OFFSET;int local_54;int local_44;char *local_40;char acStack_38 [40];long local_10;local_10 = *(long *)(in_FS_OFFSET + 0x28);local_44 = 0;for (local_54 = param_2; local_54 != 0; local_54 = local_54 / 10) {acStack_38[local_44] = (char)local_54 + (char)(local_54 / 10) * -10 + '0';local_44 = local_44 + 1;}local_40 = param_1;if (local_44 == 0) {local_44 = 1;acStack_38[0] = '0';local_40 = param_1;}while (0 < local_44) {local_44 = local_44 + -1;*local_40 = acStack_38[local_44];local_40 = local_40 + 1;}*local_40 = '\0';if (local_10 != *(long *)(in_FS_OFFSET + 0x28)) {/* WARNING: Subroutine does not return */__stack_chk_fail();}return param_1;}

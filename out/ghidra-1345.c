@@ -1,0 +1,4 @@
+#include <math.h>
+
+# 1 
+void func0(double *param_1,long param_2,double *param_3){double dVar1;int local_c;for (local_c = 0; local_c < 4; local_c = local_c + 1) {*(double *)((long)local_c * 8 + param_2) = param_1[local_c];}dVar1 = param_1[2] * param_1[7] +((*param_1 * param_1[5] + (double)(DAT_00100200 ^ (ulong)param_1[4]) * param_1[1]) -param_1[3] * param_1[6]);*param_3 = dVar1 + dVar1;dVar1 = (*param_1 * param_1[6] +(double)(DAT_00100200 ^ (ulong)param_1[4]) * param_1[2] + param_1[3] * param_1[5]) -param_1[1] * param_1[7];param_3[1] = dVar1 + dVar1;dVar1 = *param_1 * param_1[7] +(param_1[3] * (double)(DAT_00100200 ^ (ulong)param_1[4]) - param_1[2] * param_1[5]) +param_1[1] * param_1[6];param_3[2] = dVar1 + dVar1;return;}

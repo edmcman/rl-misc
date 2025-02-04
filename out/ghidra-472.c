@@ -1,0 +1,3 @@
+
+# 1 
+undefined8 func0(uint param_1,uint *param_2,int *param_3,int *param_4,uint *param_5,int param_6){undefined8 uVar1;undefined4 local_10;undefined4 local_c;local_c = 0;*param_2 = param_1 & 0xff;*param_3 = 0;*param_4 = 0;*param_5 = param_1 >> 0x10 & 0xfff;for (local_10 = 0; local_10 < 8; local_10 = local_10 + 1) {local_c = local_c + ((int)*param_2 >> ((byte)local_10 & 0x1f) & 1U);}if (local_c == 1) {if (param_6 < *param_3) {uVar1 = 2;}else if (param_6 < *param_4) {uVar1 = 3;}else if (param_4 == param_3) {uVar1 = 4;}else if ((int)*param_5 < 2) {uVar1 = 5;}else {uVar1 = 0;}}else {uVar1 = 1;}return uVar1;}

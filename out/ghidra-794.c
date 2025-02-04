@@ -1,0 +1,3 @@
+
+# 1 
+undefined * func0(undefined *param_1,int param_2){bool bVar1;byte bVar2;uint uVar3;byte local_19;int local_18;byte *local_10;bVar1 = false;*param_1 = 0x30;local_10 = param_1 + 2;param_1[1] = 0x78;if (param_2 == 0) {*local_10 = 0x30;local_10 = param_1 + 3;}else {for (local_18 = 0x1c; -1 < local_18; local_18 = local_18 + -4) {uVar3 = param_2 >> ((byte)local_18 & 0x1f);bVar2 = (byte)uVar3 & 0xf;if ((bVar1) || ((uVar3 & 0xf) != 0)) {bVar1 = true;local_19 = bVar2 + 0x30;if (0x39 < local_19) {local_19 = bVar2 + 0x37;}*local_10 = local_19;local_10 = local_10 + 1;}}}*local_10 = 0;return param_1;}

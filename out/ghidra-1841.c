@@ -1,0 +1,4 @@
+#include <stdio.h>
+
+# 1 
+long func0(long param_1){long lVar1;undefined4 local_14;for (local_14 = 0;((*(char *)(param_1 + local_14) != '\0' && (*(char *)(param_1 + local_14) != '\n')) &&((*(char *)(param_1 + local_14) == '\t' || (*(char *)(param_1 + local_14) == ' '))));local_14 = local_14 + 1) {}lVar1 = (long)local_14;for (; (((*(char *)(param_1 + local_14) != '\0' && (*(char *)(param_1 + local_14) != '\t')) &&(*(char *)(param_1 + local_14) != ' ')) && (*(char *)(param_1 + local_14) != '\n'));local_14 = local_14 + 1) {}*(undefined *)(param_1 + local_14) = 10;*(undefined *)(param_1 + (long)local_14 + 1) = 0;return param_1 + lVar1;}

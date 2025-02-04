@@ -1,0 +1,3 @@
+
+# 1 
+undefined4 func0(float param_1,float param_2,float *param_3,float *param_4){undefined4 local_10;local_10 = 1;if (0.0 <= param_1) {if (param_1 <= 0.0) {if (param_2 < 0.0) {local_10 = 0;}}else {param_2 = param_2 / param_1;if (*param_3 <= param_2) {if (param_2 < *param_4) {*param_4 = param_2;}}else {local_10 = 0;}}}else {param_2 = param_2 / param_1;if (param_2 <= *param_4) {if (*param_3 < param_2) {*param_3 = param_2;}}else {local_10 = 0;}}return local_10;}

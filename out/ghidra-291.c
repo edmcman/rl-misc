@@ -1,0 +1,3 @@
+
+# 1 
+undefined8 func0(long param_1,int *param_2){int local_c;local_c = 0;*param_2 = 0;while( true ) {if (*(char *)(param_1 + local_c) == '\0') {return 1;}if ((*(char *)(param_1 + local_c) < '0') || ('9' < *(char *)(param_1 + local_c))) break;*param_2 = (int)*(char *)(param_1 + local_c) + *param_2 * 10 + -0x30;local_c = local_c + 1;}if (*(char *)(param_1 + local_c) == '-') {*param_2 = -*param_2;return 1;}return 0;}

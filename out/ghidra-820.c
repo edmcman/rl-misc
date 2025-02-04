@@ -1,0 +1,3 @@
+
+# 1 
+undefined8 func0(float param_1,float param_2,long param_3,int param_4,float *param_5){float fVar1;int iVar2;double dVar3;iVar2 = (int)*param_5;fVar1 = *param_5;*param_5 = *param_5 + param_2;while ((float)param_4 <= *param_5) {*param_5 = *param_5 - (float)param_4;}dVar3 = (double)param_1 *(*(double *)(param_3 + (long)iVar2 * 8) +(double)(fVar1 - (float)iVar2) *(*(double *)(param_3 + (long)((iVar2 + 1) % param_4) * 8) -*(double *)(param_3 + (long)iVar2 * 8)));return CONCAT44((int)((ulong)dVar3 >> 0x20),(float)dVar3);}

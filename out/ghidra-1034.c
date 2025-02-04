@@ -1,0 +1,3 @@
+
+# 1 
+void func0(ulong *param_1,long *param_2){ulong local_50;ulong local_48;long local_40;ulong local_38;local_50 = *param_1;local_48 = param_1[1];local_40 = 0;for (local_38 = 0; local_38 < 0x20; local_38 = local_38 + 1) {local_40 = local_40 + 0x9e3779b9;local_50 = local_50 +(param_2[1] + (local_48 >> 5) ^ local_48 * 0x10 + *param_2 ^ local_40 + local_48);local_48 = local_48 +(param_2[3] + (local_50 >> 5) ^ local_50 * 0x10 + param_2[2] ^ local_40 + local_50);}*param_1 = local_50;param_1[1] = local_48;return;}

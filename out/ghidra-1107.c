@@ -1,0 +1,3 @@
+
+# 1 
+undefined8 func0(int param_1,long param_2,uint *param_3){int iVar1;ssize_t sVar2;uint local_14;uint local_10;local_14 = 0;local_10 = *param_3;while( true ) {if ((int)*param_3 <= (int)local_14) {return 0;}sVar2 = send(param_1,(void *)((int)local_14 + param_2),(ulong)local_10,0);iVar1 = (int)sVar2;if (iVar1 == -1) break;local_14 = local_14 + iVar1;local_10 = local_10 - iVar1;}*param_3 = local_14;return 0xffffffff;}

@@ -1,0 +1,3 @@
+
+# 1 
+void func0(float param_1,float param_2,float param_3,float param_4,float param_5,float *param_6){*param_6 = DAT_001001b0 /((param_1 - param_2) * (param_1 - param_3) * (param_1 - param_4) * (param_1 - param_5));param_6[1] = DAT_001001b0 /((param_2 - param_1) * (param_2 - param_3) * (param_2 - param_4) *(param_2 - param_5));param_6[2] = DAT_001001b0 /((param_3 - param_1) * (param_3 - param_2) * (param_3 - param_4) *(param_3 - param_5));param_6[3] = DAT_001001b0 /((param_4 - param_1) * (param_4 - param_2) * (param_4 - param_3) *(param_4 - param_5));param_6[4] = DAT_001001b0 /((param_5 - param_1) * (param_5 - param_2) * (param_5 - param_3) *(param_5 - param_4));return;}

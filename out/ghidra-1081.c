@@ -1,0 +1,3 @@
+
+# 1 
+char * func0(int param_1,char *param_2,int param_3){char cVar1;char *pcVar2;int local_2c;char *local_20;char *local_18;if ((param_3 < 2) || (0x24 < param_3)) {*param_2 = '\0';}else {local_20 = param_2;if ((param_1 < 0) && (param_3 == 10)) {local_20 = param_2 + 1;*param_2 = '-';}local_18 = local_20;local_2c = param_1;pcVar2 = local_20;do {local_20 = pcVar2;*local_20 = "zyxwvutsrqponmlkjihgfedcba9876543210123456789abcdefghijklmnopqrstuvwxyz"[local_2c % param_3 + 0x23];local_2c = local_2c / param_3;pcVar2 = local_20 + 1;} while (local_2c != 0);local_20[1] = '\0';while (local_18 < local_20) {cVar1 = *local_18;*local_18 = *local_20;*local_20 = cVar1;local_20 = local_20 + -1;local_18 = local_18 + 1;}}return param_2;}

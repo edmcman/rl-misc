@@ -1,0 +1,3 @@
+
+# 1 
+void func0(double param_1,double param_2,double param_3,double param_4,double *param_5){*param_5 = DAT_00100128 / ((param_1 - param_2) * (param_1 - param_3) * (param_1 - param_4));param_5[1] = DAT_00100128 / ((param_2 - param_1) * (param_2 - param_3) * (param_2 - param_4));param_5[2] = DAT_00100128 / ((param_3 - param_1) * (param_3 - param_2) * (param_3 - param_4));param_5[3] = DAT_00100128 / ((param_4 - param_1) * (param_4 - param_2) * (param_4 - param_3));return;}

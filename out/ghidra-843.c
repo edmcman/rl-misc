@@ -1,0 +1,4 @@
+#include <math.h>
+
+# 1 
+void func0(double *param_1,double *param_2){double dVar1;double dVar2;double dVar3;double dVar4;dVar1 = *param_2 / DAT_001001a0;dVar2 = param_2[1] / DAT_001001a0;dVar3 = param_2[2] / DAT_001001a0;dVar4 = param_2[3] / DAT_001001a0;*param_1 = dVar2;param_1[1] = dVar3;param_1[2] = dVar4;param_1[3] = (double)((ulong)dVar1 ^ DAT_001001b0);param_1[4] = (double)((ulong)dVar4 ^ DAT_001001b0);param_1[5] = dVar3;param_1[6] = dVar4;param_1[7] = (double)((ulong)dVar1 ^ DAT_001001b0);param_1[8] = (double)((ulong)dVar2 ^ DAT_001001b0);param_1[9] = (double)((ulong)dVar3 ^ DAT_001001b0);param_1[10] = dVar2;param_1[0xb] = (double)((ulong)dVar1 ^ DAT_001001b0);return;}

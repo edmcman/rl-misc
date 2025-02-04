@@ -1,0 +1,3 @@
+
+# 1 
+void func0(undefined4 *param_1){undefined4 uVar1;long lVar2;long in_FS_OFFSET;undefined local_18;undefined uStack_17;undefined uStack_16;undefined uStack_15;undefined4 local_14;lVar2 = *(long *)(in_FS_OFFSET + 0x28);uVar1 = *param_1;uStack_15 = (undefined)((uint)uVar1 >> 0x18);uStack_16 = (undefined)((uint)uVar1 >> 0x10);uStack_17 = (undefined)((uint)uVar1 >> 8);local_18 = (undefined)uVar1;local_14 = CONCAT13(local_18,CONCAT12(uStack_17,CONCAT11(uStack_16,uStack_15)));*param_1 = local_14;if (lVar2 != *(long *)(in_FS_OFFSET + 0x28)) {/* WARNING: Subroutine does not return */__stack_chk_fail();}return;}

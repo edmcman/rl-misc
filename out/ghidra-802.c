@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+
+# 1 
+undefined8 func0(double param_1,long param_2){double dVar1;int local_20;int local_1c;int local_18;int local_14;double local_10;local_20 = 0;do {local_1c = local_20;if (2 < local_20) {return 1;}while (local_1c = local_1c + 1, local_1c < 3) {local_10 = 0.0;for (local_18 = 0; local_18 < 3; local_18 = local_18 + 1) {local_10 = *(double *)((long)local_1c * 0x18 + param_2 + (long)local_18 * 8) **(double *)((long)local_20 * 0x18 + param_2 + (long)local_18 * 8) + local_10;}if (param_1 < local_10) {local_18 = 0;goto LAB_00100178;}}local_20 = local_20 + 1;} while( true );LAB_00100178:if (2 < local_18) goto LAB_00100182;if ((local_18 != local_20) && (local_18 != local_1c)) {for (local_14 = 0; local_14 < 3; local_14 = local_14 + 1) {dVar1 = *(double *)((long)local_20 * 0x18 + param_2 + (long)local_14 * 8);*(double *)((long)local_18 * 0x18 + param_2 + (long)local_14 * 8) =dVar1 + dVar1 + *(double *)((long)local_18 * 0x18 + param_2 + (long)local_14 * 8);}LAB_00100182:for (local_18 = 0; local_18 < 3; local_18 = local_18 + 1) {*(ulong *)((long)local_20 * 0x18 + param_2 + (long)local_18 * 8) =*(ulong *)((long)local_20 * 0x18 + param_2 + (long)local_18 * 8) ^ DAT_00100220;}return 0;}local_18 = local_18 + 1;goto LAB_00100178;}

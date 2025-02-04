@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1,long param_2,long param_3){undefined4 local_10;undefined4 local_c;local_c = 0;for (local_10 = 0; local_10 < 0x1f; local_10 = local_10 + 1) {local_c = local_c + *(int *)(param_3 + (ulong)local_10 * 4) +*(int *)(param_2 + (ulong)local_10 * 4);*(uint *)((ulong)local_10 * 4 + param_1) = local_c & 0xff;local_c = local_c >> 8;}*(uint *)(param_1 + 0x7c) = local_c + *(int *)(param_3 + 0x7c) + *(int *)(param_2 + 0x7c);return;}

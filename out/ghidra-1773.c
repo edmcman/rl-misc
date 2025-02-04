@@ -1,0 +1,3 @@
+
+# 1 
+int func0(long param_1,int *param_2,int param_3){int local_1c;int local_18;int local_14;int local_10;local_1c = 0;local_10 = *param_2;for (local_14 = 0; local_14 < param_3; local_14 = local_14 + 1) {if (local_10 < param_2[local_14]) {local_10 = param_2[local_14];}}local_18 = 0;for (local_14 = 0; local_14 < param_3; local_14 = local_14 + 1) {if (local_10 == param_2[local_14]) {*(int *)((long)local_18 * 4 + param_1) = local_14;local_18 = local_18 + 1;local_1c = local_1c + 1;}}return local_1c;}

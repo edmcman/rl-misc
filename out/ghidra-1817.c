@@ -1,0 +1,3 @@
+
+# 1 
+int func0(uint param_1,char *param_2){char *pcVar1;char cVar2;uint uVar3;uint local_3c;uint local_28;char *local_18;char *local_10;local_3c = param_1;local_18 = param_2;if ((int)param_1 < 0) {local_18 = param_2 + 1;*param_2 = '-';local_3c = -param_1;}local_28 = local_3c;local_10 = local_18;pcVar1 = local_18;do {local_18 = pcVar1;uVar3 = local_28 % 10;local_28 = local_28 / 10;pcVar1 = local_18 + 1;*local_18 = (char)uVar3 + '0';} while (local_28 != 0);*pcVar1 = '\0';do {cVar2 = *local_18;*local_18 = *local_10;*local_10 = cVar2;local_18 = local_18 + -1;local_10 = local_10 + 1;} while (local_10 < local_18);return (int)pcVar1 - (int)param_2;}

@@ -1,0 +1,3 @@
+
+# 1 
+int func0(char *param_1,int *param_2){char *local_20;uint local_10;uint local_c;local_10 = 0x3141592c;local_c = 0x77f044ed;for (local_20 = param_1; *local_20 != '\0'; local_20 = local_20 + 1) {local_10 = (int)*local_20 + (local_10 << 7 | local_10 >> 0x19);local_c = (int)*local_20 + (local_c << 0xb | local_c >> 0x15);}*param_2 = (local_10 >> 0x10) + local_c;return local_10 + (local_c >> 0x10);}

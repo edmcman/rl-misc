@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1,long param_2){undefined4 local_14;undefined4 local_10;undefined4 local_c;for (local_14 = 0; local_14 < 0x14; local_14 = local_14 + 1) {*(undefined4 *)(param_2 + (long)local_14 * 4) = 0xffffffff;}for (local_14 = 0; local_14 < 0x14; local_14 = local_14 + 1) {local_c = 1;local_10 = local_14;while (local_10 = local_10 + 1, local_10 < 0x14) {if (*(int *)(param_1 + (long)local_14 * 4) == *(int *)(param_1 + (long)local_10 * 4)) {*(undefined4 *)(param_2 + (long)local_10 * 4) = 0;local_c = local_c + 1;}}if (*(int *)(param_2 + (long)local_14 * 4) != 0) {*(int *)((long)local_14 * 4 + param_2) = local_c;}}return;}

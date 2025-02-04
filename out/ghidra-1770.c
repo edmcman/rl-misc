@@ -1,0 +1,3 @@
+
+# 1 
+char * func0(char *param_1,char *param_2){bool bVar1;char *local_28;char *local_20;bVar1 = false;local_20 = param_1;for (local_28 = param_2; *local_28 != '\0'; local_28 = local_28 + 1) {if (*local_20 == '\0') {bVar1 = true;}local_20 = local_20 + 1;}if ((*local_20 == '\0') || (bVar1)) {local_20[1] = '\0';}for (; local_28 != param_2 + -1; local_28 = local_28 + -1) {*local_20 = *local_28;local_20 = local_20 + -1;}return local_20;}

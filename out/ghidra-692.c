@@ -1,0 +1,3 @@
+
+# 1 
+void func0(ushort *param_1){long lVar1;ushort uVar2;ushort uVar3;long lVar4;ulong uVar5;long in_FS_OFFSET;lVar4 = *(long *)(in_FS_OFFSET + 0x28);uVar5 = (ulong)*param_1 * 0xe66d + 0xb;lVar1 = (uVar5 >> 0x10) + (ulong)*param_1 * 0xdeec + (ulong)param_1[1] * 0xe66d;uVar2 = param_1[1];uVar3 = *param_1;*param_1 = (ushort)uVar5;param_1[1] = (ushort)lVar1;param_1[2] = (short)((ulong)lVar1 >> 0x10) + uVar3 * 5 + param_1[2] * -0x1993 + uVar2 * -0x2114;if (lVar4 != *(long *)(in_FS_OFFSET + 0x28)) {/* WARNING: Subroutine does not return */__stack_chk_fail();}return;}

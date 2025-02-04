@@ -1,0 +1,3 @@
+
+# 1 
+undefined8 func0(char *param_1,uint *param_2){int iVar1;char *local_20;uint local_c;local_20 = param_1;if ((*param_1 == '0') && (param_1[1] == 'x')) {local_20 = param_1 + 2;}*param_2 = 0;do {iVar1 = (int)*local_20;if (iVar1 == 0) {return 1;}if ((iVar1 < 0x61) || (0x66 < iVar1)) {if ((iVar1 < 0x41) || (0x46 < iVar1)) {if ((iVar1 < 0x30) || (0x39 < iVar1)) {return 0;}local_c = iVar1 - 0x30;}else {local_c = iVar1 - 0x37;}}else {local_c = iVar1 - 0x57;}*param_2 = *param_2 << 4 | local_c;local_20 = local_20 + 1;} while( true );}

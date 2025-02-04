@@ -1,0 +1,3 @@
+
+# 1 
+undefined8 func0(float *param_1){bool bVar1;bool bVar2;bool bVar3;undefined8 uVar4;if ((*param_1 <= (float)(DAT_00100120 ^ (uint)DAT_00100110)) || (DAT_00100110 <= *param_1)) {bVar1 = false;}else {bVar1 = true;}if ((param_1[1] <= (float)(DAT_00100120 ^ (uint)DAT_00100110)) || (DAT_00100110 <= param_1[1])) {bVar2 = false;}else {bVar2 = true;}if ((param_1[2] <= (float)(DAT_00100120 ^ (uint)DAT_00100110)) || (DAT_00100110 <= param_1[2])) {bVar3 = false;}else {bVar3 = true;}if (((bVar1) && (bVar2)) && (bVar3)) {uVar4 = 1;}else {uVar4 = 0;}return uVar4;}

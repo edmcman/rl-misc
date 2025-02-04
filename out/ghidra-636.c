@@ -1,0 +1,3 @@
+
+# 1 
+void func0(undefined8 *param_1,long param_2,int param_3,int param_4){*param_1 = *(undefined8 *)(param_2 + (long)param_3 * 8);param_1[1] = *(undefined8 *)((long)(param_3 + param_4) * 8 + param_2);param_1[2] = *(undefined8 *)((long)(param_3 + param_4 * 2) * 8 + param_2);param_1[3] = *(undefined8 *)((long)(param_3 + param_4 * 3) * 8 + param_2);param_1[4] = *(undefined8 *)((long)(param_3 + param_4 * 4) * 8 + param_2);param_1[5] = *(undefined8 *)((long)(param_3 + param_4 * 5) * 8 + param_2);param_1[6] = *(undefined8 *)((long)(param_3 + param_4 * 6) * 8 + param_2);param_1[7] = *(undefined8 *)((long)(param_3 + param_4 * 7) * 8 + param_2);return;}

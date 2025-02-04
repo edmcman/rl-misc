@@ -1,0 +1,4 @@
+#include <string.h>
+
+# 1 
+void func0(uint param_1,undefined *param_2){uint uVar1;undefined uVar2;if ((param_1 & 2) == 0) {uVar2 = 0x2e;}else {uVar2 = 0x5d;}*param_2 = uVar2;uVar1 = param_1 & 0x1c;if (uVar1 == 0x10) {param_2[1] = 0x5e;goto LAB_00100090;}if (uVar1 < 0x11) {if (uVar1 == 8) {param_2[1] = 0x2b;goto LAB_00100090;}if (uVar1 < 9) {if (uVar1 == 0) {param_2[1] = 0x2e;goto LAB_00100090;}if (uVar1 == 4) {param_2[1] = 0x2d;goto LAB_00100090;}}}param_2[1] = 0x3f;LAB_00100090:if ((param_1 & 0x20) == 0) {uVar2 = 0x2e;}else {uVar2 = 0x2a;}param_2[2] = uVar2;if ((param_1 & 1) == 0) {uVar2 = 0x2e;}else {uVar2 = 0x5b;}param_2[3] = uVar2;param_2[4] = 0;return;}

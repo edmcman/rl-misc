@@ -1,0 +1,4 @@
+#include <stdio.h>
+
+# 1 
+void func0(long param_1,long param_2){int iVar1;char cVar2;undefined4 local_14;undefined4 local_10;local_10 = 0;for (local_14 = 0; cVar2 = *(char *)(param_2 + local_14), cVar2 != '\0'; local_14 = local_14 + 1){if (cVar2 == '\t') {iVar1 = local_10 + 1;*(undefined *)(param_1 + local_10) = 0x5c;local_10 = local_10 + 2;*(undefined *)(param_1 + iVar1) = 0x74;}else if (cVar2 == '\n') {*(undefined *)(param_1 + local_10) = 0x5c;*(undefined *)(param_1 + (local_10 + 1)) = 0x6e;local_10 = local_10 + 2;}else {*(char *)(param_1 + local_10) = cVar2;local_10 = local_10 + 1;}}*(undefined *)(param_1 + local_10) = 0;return;}

@@ -1,0 +1,3 @@
+
+# 1 
+void func0(long param_1,long param_2){bool bVar1;undefined4 local_18;undefined4 local_14;undefined4 local_10;local_10 = 0;local_18 = 0;do {if (*(char *)(param_1 + local_18) == '\0') {*(undefined *)(param_1 + local_10) = 0;return;}bVar1 = false;for (local_14 = 0; *(char *)(param_2 + local_14) != '\0'; local_14 = local_14 + 1) {if (*(char *)(param_1 + local_18) == *(char *)(param_2 + local_14)) {bVar1 = true;break;}}if (!bVar1) {*(undefined *)(local_10 + param_1) = *(undefined *)(local_18 + param_1);local_10 = local_10 + 1;}local_18 = local_18 + 1;} while( true );}

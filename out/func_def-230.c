@@ -1,0 +1,190 @@
+
+
+
+
+
+
+
+
+# 1 
+void cftf162(float *a, float *w)
+{
+    float wn4r, wk1r, wk1i, wk2r, wk2i, wk3r, wk3i,
+        x0r, x0i, x1r, x1i, x2r, x2i,
+        y0r, y0i, y1r, y1i, y2r, y2i, y3r, y3i,
+        y4r, y4i, y5r, y5i, y6r, y6i, y7r, y7i,
+        y8r, y8i, y9r, y9i, y10r, y10i, y11r, y11i,
+        y12r, y12i, y13r, y13i, y14r, y14i, y15r, y15i;
+
+    wn4r = w[1];
+    wk1r = w[4];
+    wk1i = w[5];
+    wk3r = w[6];
+    wk3i = -w[7];
+    wk2r = w[8];
+    wk2i = w[9];
+    x1r = a[0] - a[17];
+    x1i = a[1] + a[16];
+    x0r = a[8] - a[25];
+    x0i = a[9] + a[24];
+    x2r = wn4r * (x0r - x0i);
+    x2i = wn4r * (x0i + x0r);
+    y0r = x1r + x2r;
+    y0i = x1i + x2i;
+    y4r = x1r - x2r;
+    y4i = x1i - x2i;
+    x1r = a[0] + a[17];
+    x1i = a[1] - a[16];
+    x0r = a[8] + a[25];
+    x0i = a[9] - a[24];
+    x2r = wn4r * (x0r - x0i);
+    x2i = wn4r * (x0i + x0r);
+    y8r = x1r - x2i;
+    y8i = x1i + x2r;
+    y12r = x1r + x2i;
+    y12i = x1i - x2r;
+    x0r = a[2] - a[19];
+    x0i = a[3] + a[18];
+    x1r = wk1r * x0r - wk1i * x0i;
+    x1i = wk1r * x0i + wk1i * x0r;
+    x0r = a[10] - a[27];
+    x0i = a[11] + a[26];
+    x2r = wk3i * x0r - wk3r * x0i;
+    x2i = wk3i * x0i + wk3r * x0r;
+    y1r = x1r + x2r;
+    y1i = x1i + x2i;
+    y5r = x1r - x2r;
+    y5i = x1i - x2i;
+    x0r = a[2] + a[19];
+    x0i = a[3] - a[18];
+    x1r = wk3r * x0r - wk3i * x0i;
+    x1i = wk3r * x0i + wk3i * x0r;
+    x0r = a[10] + a[27];
+    x0i = a[11] - a[26];
+    x2r = wk1r * x0r + wk1i * x0i;
+    x2i = wk1r * x0i - wk1i * x0r;
+    y9r = x1r - x2r;
+    y9i = x1i - x2i;
+    y13r = x1r + x2r;
+    y13i = x1i + x2i;
+    x0r = a[4] - a[21];
+    x0i = a[5] + a[20];
+    x1r = wk2r * x0r - wk2i * x0i;
+    x1i = wk2r * x0i + wk2i * x0r;
+    x0r = a[12] - a[29];
+    x0i = a[13] + a[28];
+    x2r = wk2i * x0r - wk2r * x0i;
+    x2i = wk2i * x0i + wk2r * x0r;
+    y2r = x1r + x2r;
+    y2i = x1i + x2i;
+    y6r = x1r - x2r;
+    y6i = x1i - x2i;
+    x0r = a[4] + a[21];
+    x0i = a[5] - a[20];
+    x1r = wk2i * x0r - wk2r * x0i;
+    x1i = wk2i * x0i + wk2r * x0r;
+    x0r = a[12] + a[29];
+    x0i = a[13] - a[28];
+    x2r = wk2r * x0r - wk2i * x0i;
+    x2i = wk2r * x0i + wk2i * x0r;
+    y10r = x1r - x2r;
+    y10i = x1i - x2i;
+    y14r = x1r + x2r;
+    y14i = x1i + x2i;
+    x0r = a[6] - a[23];
+    x0i = a[7] + a[22];
+    x1r = wk3r * x0r - wk3i * x0i;
+    x1i = wk3r * x0i + wk3i * x0r;
+    x0r = a[14] - a[31];
+    x0i = a[15] + a[30];
+    x2r = wk1i * x0r - wk1r * x0i;
+    x2i = wk1i * x0i + wk1r * x0r;
+    y3r = x1r + x2r;
+    y3i = x1i + x2i;
+    y7r = x1r - x2r;
+    y7i = x1i - x2i;
+    x0r = a[6] + a[23];
+    x0i = a[7] - a[22];
+    x1r = wk1i * x0r + wk1r * x0i;
+    x1i = wk1i * x0i - wk1r * x0r;
+    x0r = a[14] + a[31];
+    x0i = a[15] - a[30];
+    x2r = wk3i * x0r - wk3r * x0i;
+    x2i = wk3i * x0i + wk3r * x0r;
+    y11r = x1r + x2r;
+    y11i = x1i + x2i;
+    y15r = x1r - x2r;
+    y15i = x1i - x2i;
+    x1r = y0r + y2r;
+    x1i = y0i + y2i;
+    x2r = y1r + y3r;
+    x2i = y1i + y3i;
+    a[0] = x1r + x2r;
+    a[1] = x1i + x2i;
+    a[2] = x1r - x2r;
+    a[3] = x1i - x2i;
+    x1r = y0r - y2r;
+    x1i = y0i - y2i;
+    x2r = y1r - y3r;
+    x2i = y1i - y3i;
+    a[4] = x1r - x2i;
+    a[5] = x1i + x2r;
+    a[6] = x1r + x2i;
+    a[7] = x1i - x2r;
+    x1r = y4r - y6i;
+    x1i = y4i + y6r;
+    x0r = y5r - y7i;
+    x0i = y5i + y7r;
+    x2r = wn4r * (x0r - x0i);
+    x2i = wn4r * (x0i + x0r);
+    a[8] = x1r + x2r;
+    a[9] = x1i + x2i;
+    a[10] = x1r - x2r;
+    a[11] = x1i - x2i;
+    x1r = y4r + y6i;
+    x1i = y4i - y6r;
+    x0r = y5r + y7i;
+    x0i = y5i - y7r;
+    x2r = wn4r * (x0r - x0i);
+    x2i = wn4r * (x0i + x0r);
+    a[12] = x1r - x2i;
+    a[13] = x1i + x2r;
+    a[14] = x1r + x2i;
+    a[15] = x1i - x2r;
+    x1r = y8r + y10r;
+    x1i = y8i + y10i;
+    x2r = y9r - y11r;
+    x2i = y9i - y11i;
+    a[16] = x1r + x2r;
+    a[17] = x1i + x2i;
+    a[18] = x1r - x2r;
+    a[19] = x1i - x2i;
+    x1r = y8r - y10r;
+    x1i = y8i - y10i;
+    x2r = y9r + y11r;
+    x2i = y9i + y11i;
+    a[20] = x1r - x2i;
+    a[21] = x1i + x2r;
+    a[22] = x1r + x2i;
+    a[23] = x1i - x2r;
+    x1r = y12r - y14i;
+    x1i = y12i + y14r;
+    x0r = y13r + y15i;
+    x0i = y13i - y15r;
+    x2r = wn4r * (x0r - x0i);
+    x2i = wn4r * (x0i + x0r);
+    a[24] = x1r + x2r;
+    a[25] = x1i + x2i;
+    a[26] = x1r - x2r;
+    a[27] = x1i - x2i;
+    x1r = y12r + y14i;
+    x1i = y12i - y14r;
+    x0r = y13r - y15i;
+    x0i = y13i + y15r;
+    x2r = wn4r * (x0r - x0i);
+    x2i = wn4r * (x0i + x0r);
+    a[28] = x1r - x2i;
+    a[29] = x1i + x2r;
+    a[30] = x1r + x2i;
+    a[31] = x1i - x2r;
+}

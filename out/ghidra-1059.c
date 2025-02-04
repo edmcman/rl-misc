@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+# 1 
+void func0(double *param_1,long param_2){double dVar1;double dVar2;double dVar3;double dVar4;double dVar5;double dVar6;double dVar7;double dVar8;double dVar9;double dVar10;double dVar11;double dVar12;double dVar13;double dVar14;double dVar15;double dVar16;double dVar17;double dVar18;dVar18 = *(double *)(param_2 + 8);dVar1 = param_1[8] + *param_1 + param_1[0xc] + param_1[4];dVar2 = param_1[9] + param_1[1] + param_1[0xd] + param_1[5];dVar3 = (param_1[8] + *param_1) - (param_1[0xc] + param_1[4]);dVar4 = (param_1[9] + param_1[1]) - (param_1[0xd] + param_1[5]);dVar5 = (*param_1 - param_1[8]) - (param_1[5] - param_1[0xd]);dVar6 = (param_1[1] - param_1[9]) + (param_1[4] - param_1[0xc]);dVar7 = (*param_1 - param_1[8]) + (param_1[5] - param_1[0xd]);dVar8 = (param_1[1] - param_1[9]) - (param_1[4] - param_1[0xc]);dVar9 = param_1[10] + param_1[2] + param_1[0xe] + param_1[6];dVar10 = param_1[0xb] + param_1[3] + param_1[0xf] + param_1[7];dVar11 = (param_1[10] + param_1[2]) - (param_1[0xe] + param_1[6]);dVar12 = (param_1[0xb] + param_1[3]) - (param_1[0xf] + param_1[7]);dVar13 = (param_1[2] - param_1[10]) - (param_1[7] - param_1[0xf]);dVar14 = (param_1[3] - param_1[0xb]) + (param_1[6] - param_1[0xe]);dVar15 = (param_1[2] - param_1[10]) + (param_1[7] - param_1[0xf]);dVar16 = (param_1[3] - param_1[0xb]) - (param_1[6] - param_1[0xe]);dVar17 = (dVar13 - dVar14) * dVar18;dVar13 = (dVar13 + dVar14) * dVar18;dVar14 = (dVar15 - dVar16) * dVar18;dVar18 = (dVar15 + dVar16) * dVar18;param_1[8] = dVar5 + dVar17;param_1[9] = dVar6 + dVar13;param_1[10] = dVar5 - dVar17;param_1[0xb] = dVar6 - dVar13;param_1[0xc] = dVar7 - dVar18;param_1[0xd] = dVar8 + dVar14;param_1[0xe] = dVar7 + dVar18;param_1[0xf] = dVar8 - dVar14;*param_1 = dVar1 + dVar9;param_1[1] = dVar2 + dVar10;param_1[2] = dVar1 - dVar9;param_1[3] = dVar2 - dVar10;param_1[4] = dVar3 - dVar12;param_1[5] = dVar4 + dVar11;param_1[6] = dVar3 + dVar12;param_1[7] = dVar4 - dVar11;return;}
