@@ -13,6 +13,11 @@ Ghidra/Hex-rays decompilation.  Most fail because they don't compile.  You can
 fairly easily search for the ones that compile by grepping for "Cost:" in the
 output.
 
+# Interesting examples
+
+I put some interesting examples in `interesting` and a few examples that didn't compile
+in `no-compile`.
+
 # Notes
 
 I noticed some tests with a cost of 40000 but the code is identical.  I am not
