@@ -11,12 +11,17 @@ Run the following commands (you need docker):
 This will do comparisons between the original source code and the
 Ghidra/Hex-rays decompilation.  Most fail because they don't compile.  You can
 fairly easily search for the ones that compile by grepping for "Cost:" in the
-output.
+output.  It will also output the "Target", which is the assembly code of the
+original executable we are decompiling, and the "Rewrite", which is the assembly
+code of the decompiled code (after it is re-compiled).
 
 # Interesting examples
 
 I put some interesting examples in `interesting` and a few examples that didn't compile
 in `no-compile`.
+
+Run each pair with `compare.bash` as above, i.e., `bash compare.bash
+interesting/{func_def,hex-rays}-111.c`.
 
 # Notes
 

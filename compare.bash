@@ -4,14 +4,14 @@
 
 PATH="$PATH:/home/stoke/stoke/bin"
 
-CFLAGS="-O3"
+CFLAGS="-O3 -I/mnt"
 BOUND=64
 DEFS="{ %rax %rdx %rbx %rsp %rbp %esi %rdi %r12 %r13 %r14 %r15 %xmm0 %xmm1 %cf %pf %af %zf %sf %of %mxcsr::rc[0] %rdx %rsi }"
 
 set -ex
 
-gcc "$CFLAGS" -c $1 -o /tmp/a.o || (echo "Failed to compile"; exit 1)
-gcc "$CFLAGS" -c $2 -o /tmp/b.o || (echo "Failed to compile"; exit 1)
+gcc $CFLAGS -c $1 -o /tmp/a.o || (echo "Failed to compile"; exit 1)
+gcc $CFLAGS -c $2 -o /tmp/b.o || (echo "Failed to compile"; exit 1)
 
 rm -rf /tmp/stoke
 mkdir -p /tmp/stoke/a-funcs
