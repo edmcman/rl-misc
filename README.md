@@ -15,6 +15,9 @@ output.  It will also output the "Target", which is the assembly code of the
 original executable we are decompiling, and the "Rewrite", which is the assembly
 code of the decompiled code (after it is re-compiled).
 
+The logs for this are in `out-ghidra.log` and `out-hexrays.log` respectively in case
+you want to look at the output but don't feel like running it.
+
 # Interesting examples
 
 I put some interesting examples in `interesting` and a few examples that didn't compile
